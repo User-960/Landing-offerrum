@@ -34,3 +34,7 @@ You will also see any lint errors in the console.
 
 Runs the app in the production mode.\
 The project will be built, compressed and optimized in the “dist” folder.
+
+### `npm run clear`
+
+Starts deleting the "dist" folder.\
