@@ -15,7 +15,7 @@ The starting configuration uses the jQuery library.
 ## To clone repository
 
 ```shell
-https://github.com/User-960/
+https://github.com/User-960/Gulp-configuration.git
 ```
 
 ## Available Scripts
