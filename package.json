@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "gulp",
-		"prod": "gulp build",
+		"build": "gulp build",
 		"clear": "rd /s /q dist"
 	},
 	"author": {
