@@ -9,20 +9,26 @@ const del = require('del')
 
 function styles() {
 	return src('app/scss/style.scss')
-		.pipe(scss({ outputStyle: 'compressed' }))
-		.pipe(concat('style.min.css'))
 		.pipe(
 			autoprefixer({
 				overrideBrowserslist: ['last 10 version'],
 				grid: true
 			})
 		)
+		.pipe(concat('style.min.css'))
+		.pipe(scss({ outputStyle: 'compressed' }))
 		.pipe(dest('app/css'))
 		.pipe(browserSync.stream())
 }
 
 function scripts() {
-	return src(['node_modules/jquery/dist/jquery.js', 'app/js/main.js'])
+	return src([
+		'node_modules/jquery/dist/jquery.js',
+		'app/js/main.js'
+
+		// 'app/js/*.js',
+		// '!app/js/main.min.js'
+	])
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(dest('app/js'))
@@ -68,7 +74,7 @@ function build() {
 			'app/css/style.min.css',
 			'app/fonts/**/*',
 			'app/js/main.min.js',
-			'app/*.html'
+			'app/**/*.html'
 		],
 		{ base: 'app' }
 	).pipe(dest('dist'))
