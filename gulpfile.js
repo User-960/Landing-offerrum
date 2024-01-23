@@ -55,24 +55,23 @@ function cleanDist() {
 }
 
 function watching() {
-	watch(['app/scss/**/*.scss'], styles)
-	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
-	watch(['app/*.html']).on('change', browserSync.reload)
-}
-
-function browsersync() {
 	browserSync.init({
 		server: {
 			baseDir: 'app/'
 		}
 	})
+
+	watch(['app/scss/**/*.scss'], styles)
+	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
+	watch(['app/*.html']).on('change', browserSync.reload)
 }
 
 function build() {
 	return src(
 		[
 			'app/css/style.min.css',
-			'app/fonts/**/*',
+			'app/images/*.*',
+			'app/fonts/*.*',
 			'app/js/main.min.js',
 			'app/**/*.html'
 		],
@@ -82,10 +81,9 @@ function build() {
 
 exports.styles = styles
 exports.watching = watching
-exports.browsersync = browsersync
 exports.scripts = scripts
 exports.images = images
 exports.cleanDist = cleanDist
 
 exports.build = series(cleanDist, images, build)
-exports.default = parallel(styles, scripts, browsersync, watching)
+exports.default = parallel(styles, scripts, watching)
