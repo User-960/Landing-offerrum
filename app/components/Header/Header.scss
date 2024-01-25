@@ -1,0 +1,50 @@
+.header {
+	padding-top: 30px;
+	background-color: transparent;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& .menu__list {
+		display: flex;
+		justify-content: space-between;
+		margin-right: 150px;
+		& li {
+			user-select: none;
+			cursor: pointer;
+			color: $grey;
+		}
+	}
+
+	& .menu__list-item + .menu__list-item {
+		margin-left: 105px;
+	}
+
+	& .menu__btn {
+		color: $white;
+		padding: 16px 22px;
+		background-color: transparent;
+		border: 1px solid $white;
+		border-radius: 15px;
+		cursor: pointer;
+		transition: all 0.5s;
+
+		&:hover {
+			color: $lime;
+			border: 1px solid $lime;
+		}
+		&:active {
+			background-color: rgba(224, 255, 172, 0.05);
+			color: $lime;
+			border: 1px solid $lime;
+		}
+	}
+}

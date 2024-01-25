@@ -4,6 +4,9 @@
 @import './reset';
 @import './global';
 
+/* Components */
+@import '../components/Header/Header';
+
 h1 {
 	font-family: 'GT Walsheim Pro', arial;
 	font-size: 20px;

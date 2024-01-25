@@ -26,6 +26,8 @@ function styles() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.js',
+		'app/constants/root.js',
+		'app/components/Header/Header.js',
 		'app/js/main.js'
 
 		// 'app/js/*.js',
@@ -71,6 +73,7 @@ function watching() {
 		}
 	})
 
+	watch(['app/components/**/*.scss'], styles)
 	watch(['app/scss/**/*.scss'], styles)
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
 	watch(['app/*.html']).on('change', browserSync.reload)
