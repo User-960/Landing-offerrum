@@ -3,3 +3,10 @@
 @import './fonts';
 @import './reset';
 @import './global';
+
+h1 {
+	font-family: 'GT Walsheim Pro', arial;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 26px;
+}

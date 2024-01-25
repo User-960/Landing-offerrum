@@ -5,6 +5,8 @@ const browserSync = require('browser-sync').create()
 const uglify = require('gulp-uglify-es').default
 const autoprefixer = require('gulp-autoprefixer')
 const imagemin = require('gulp-imagemin')
+const fonter = require('gulp-fonter')
+const ttf2woff2 = require('gulp-ttf2woff2')
 const del = require('del')
 
 function styles() {
@@ -47,7 +49,15 @@ function images() {
 				})
 			])
 		)
-		.pipe(dest('dist/images'))
+		.pipe(dest('app/images'))
+}
+
+function fonts() {
+	return src('app/fonts/*.*')
+		.pipe(fonter({ formats: ['woff', 'ttf'] }))
+		.pipe(src('app/fonts/*.ttf'))
+		.pipe(ttf2woff2())
+		.pipe(dest('app/fonts'))
 }
 
 function cleanDist() {
@@ -83,7 +93,8 @@ exports.styles = styles
 exports.watching = watching
 exports.scripts = scripts
 exports.images = images
+exports.fonts = fonts
 exports.cleanDist = cleanDist
 
-exports.build = series(cleanDist, images, build)
+exports.build = series(cleanDist, images, fonts, build)
 exports.default = parallel(styles, scripts, watching)

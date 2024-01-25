@@ -52,7 +52,8 @@ body {
 	position: relative;
 	line-height: 1.65;
 	overflow-x: hidden;
-	background-color: $white;
+	background-color: $bg-color;
+	color: $white;
 }
 
 button {
@@ -70,14 +71,8 @@ img {
 	max-width: 100%;
 }
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
 .wrapper-inner-page {
-	padding: 25px 55px;
+	padding: 10px 15px;
 	max-width: $desktop;
 	width: 100%;
 	margin: 0 auto;
