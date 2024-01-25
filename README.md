@@ -1,4 +1,4 @@
-# Gulp-configuration
+# Landing-offerrum
 
 This is the gulp configuration to start creating the project.
 
@@ -15,7 +15,7 @@ The starting configuration uses the jQuery library.
 ## To clone repository
 
 ```shell
-https://github.com/User-960/Gulp-configuration.git
+https://github.com/User-960/Landing-offerrum.git
 ```
 
 ## Available Scripts
