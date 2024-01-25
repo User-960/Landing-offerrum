@@ -8,10 +8,10 @@ class Header {
           <menu class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a href="#top">Главная</a>
+                <a class="menu__list-link" href="#top">Главная</a>
               </li>
               <li class="menu__list-item">
-                <a href="#benefits">Что даст обучение</a>
+                <a class="menu__list-link" href="#benefits">Что даст обучение</a>
               </li>
             </ul>
 

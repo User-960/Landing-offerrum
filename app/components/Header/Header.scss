@@ -1,4 +1,6 @@
 .header {
+	max-width: 1280px;
+	margin: 0 auto;
 	padding-top: 30px;
 	background-color: transparent;
 	&__inner {
@@ -17,15 +19,16 @@
 		display: flex;
 		justify-content: space-between;
 		margin-right: 150px;
-		& li {
-			user-select: none;
-			cursor: pointer;
-			color: $grey;
-		}
 	}
 
 	& .menu__list-item + .menu__list-item {
 		margin-left: 105px;
+	}
+
+	& .menu__list-link {
+		user-select: none;
+		cursor: pointer;
+		color: $grey;
 	}
 
 	& .menu__btn {
