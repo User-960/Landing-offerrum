@@ -27,7 +27,8 @@ function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.js',
 		'app/constants/root.js',
-		'app/components/Header/Header.js',
+		'app/components/header/Header.js',
+		'app/components/benefitsList/BenefitsList.js',
 		'app/js/main.js'
 
 		// 'app/js/*.js',

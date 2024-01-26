@@ -5,13 +5,18 @@
 @import './global';
 
 /* Components */
-@import '../components/Header/Header';
+@import '../components/header/Header';
+@import '../components/benefitsList/BenefitsList';
 
 .top {
-	margin-top: 103px;
+	background-color: $bg-color;
+	padding: 100px 0px;
+	max-height: 1030px;
+	height: 100%;
 	&__inner {
 		display: flex;
 		position: relative;
+		margin-top: 103px;
 	}
 	&__info {
 		position: relative;
@@ -57,7 +62,106 @@
 		max-width: 863px;
 		max-height: 708px;
 		position: absolute;
-		right: -88px;
+		right: -90px;
 		z-index: 10;
+	}
+}
+
+.benefits {
+	padding: 195px 0px 200px 0px;
+	&__inner {
+		max-width: 1284px;
+		max-height: 1093px;
+		width: 100%;
+		height: 100%;
+
+		background-image: url('../images/benefits-bg.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		border-radius: 20px;
+		padding: 130px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		margin-bottom: 65px;
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 58.5px;
+		text-align: center;
+		position: relative;
+		z-index: 20;
+		&::before {
+			content: '';
+			width: 84px;
+			height: 84px;
+			background-image: url('../images/benefits-circle-1.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			left: -167px;
+			top: -21px;
+		}
+
+		&::after {
+			content: '';
+			width: 152px;
+			height: 152px;
+			background-image: url('../images/benefits-circle-2.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			right: -35%;
+			bottom: 102px;
+		}
+	}
+
+	&__box {
+		position: relative;
+		z-index: 20;
+		&::after {
+			content: '';
+			width: 152px;
+			height: 152px;
+			background-image: url('../images/benefits-circle-3.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			position: absolute;
+			right: -152px;
+			bottom: 30px;
+		}
+	}
+
+	&__circle {
+		position: relative;
+		&::before {
+			content: '';
+			width: 700px;
+			height: 700px;
+			background-image: url('../images/benefits-circle-5.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			right: 72px;
+			bottom: -200px;
+		}
+
+		&::after {
+			content: '';
+			width: 700px;
+			height: 700px;
+			background-image: url('../images/benefits-circle-4.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			left: 80px;
+			bottom: 440px;
+		}
 	}
 }
