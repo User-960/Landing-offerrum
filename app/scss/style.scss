@@ -88,7 +88,11 @@
 		filter: blur(11px);
 	}
 }
+
 .top__btn:disabled {
+	&.shadow::before {
+		display: none;
+	}
 	color: rgba(36, 36, 36, 0.5);
 }
 
