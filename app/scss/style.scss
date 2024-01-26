@@ -14,10 +14,23 @@
 	padding: 100px 0px;
 	max-height: 1030px;
 	height: 100%;
+
 	&__inner {
 		display: flex;
 		position: relative;
 		margin-top: 103px;
+
+		&::before {
+			content: '';
+			width: 700px;
+			height: 700px;
+			background-image: url('../images/top-circle-6.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			left: -434px;
+			top: -484px;
+		}
 	}
 	&__info {
 		position: relative;
