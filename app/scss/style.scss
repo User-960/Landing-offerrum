@@ -5,7 +5,8 @@
 @import './global';
 
 /* Components */
-@import '../components/Header/Header';
+@import '../components/header/Header';
+@import '../components/benefitsList/BenefitsList';
 
 .top {
 	background-color: $bg-color;
@@ -69,14 +70,15 @@
 .benefits {
 	padding: 195px 0px 0px 0px;
 	&__inner {
-		max-width: 1280px;
-		max-height: 1090px;
+		max-width: 1284px;
+		max-height: 1093px;
 		width: 100%;
 		height: 100%;
 
 		background-image: url('../images/benefits-bg.png');
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: cover;
 
 		border-radius: 20px;
 		padding: 130px 0px;
@@ -87,6 +89,7 @@
 	}
 
 	&__title {
+		margin-bottom: 65px;
 		font-weight: 600;
 		font-size: 45px;
 		line-height: 58.5px;
@@ -113,7 +116,7 @@
 			background-position: center;
 			position: absolute;
 			right: -35%;
-			bottom: 130px;
+			bottom: 102px;
 		}
 	}
 }
