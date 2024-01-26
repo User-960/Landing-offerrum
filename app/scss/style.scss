@@ -48,14 +48,29 @@
 
 		background: linear-gradient(92.84deg, #1dd844 1.44%, #cbf62e 126.29%);
 
-		box-shadow: 0px 0px 9px 4px rgba(29, 216, 68, 0.25);
-
 		color: $black;
 		text-align: center;
 		font-family: 'GT Walsheim Pro', arial;
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 26px;
+
+		position: relative;
+
+		transition: all ease-in-out 0.09s;
+
+		&.shadow::before {
+			content: '';
+			position: absolute;
+			inset: 0px;
+			transform: translate(0px, 0px);
+			z-index: -1;
+			background: linear-gradient(0.25turn, #1dd844, #cbf62e);
+			filter: blur(8px);
+			border-radius: 14px;
+
+			transition: all ease-in-out 0.2s;
+		}
 	}
 
 	&__img {
@@ -65,6 +80,20 @@
 		right: -90px;
 		z-index: 10;
 	}
+}
+
+.top__btn:hover {
+	&.shadow::before {
+		inset: -1px;
+		filter: blur(11px);
+	}
+}
+.top__btn:disabled {
+	color: rgba(36, 36, 36, 0.5);
+}
+
+.top__btn:active {
+	box-shadow: 0px 52px 8px -47px rgba(29, 37, 50, 0.2) inset;
 }
 
 .benefits {
