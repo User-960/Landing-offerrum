@@ -29,6 +29,7 @@ function scripts() {
 		'app/constants/root.js',
 		'app/components/header/Header.js',
 		'app/components/benefitsList/BenefitsList.js',
+		'app/components/form/Form.js',
 		'app/js/main.js'
 
 		// 'app/js/*.js',
