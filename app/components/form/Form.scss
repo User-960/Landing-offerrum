@@ -36,6 +36,25 @@
 		z-index: 300;
 
 		animation: opacity 1s;
+
+		&.success {
+			padding: 56px 71px 90px 71px;
+			p {
+				text-align: center;
+				margin: auto;
+				max-width: 380px;
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__success-img {
+		width: 100px;
+		height: 100px;
+		background-image: url('../../images/success.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: 0 auto;
 	}
 
 	&__close {

@@ -41,8 +41,8 @@ class Form {
 			ROOT_ERROR.style.display = 'none'
 			ROOT_INPUT.removeEventListener('input', toggleErrorDisplay)
 
-			form.handlerClearForm()
-			alert(`Мы выслали письмо на email: ${ROOT_INPUT.value}`)
+			// form.handlerClearForm()
+			form.renderSuccessForm(ROOT_INPUT.value)
 		}
 
 		if (!ROOT_INPUT.value && !ROOT_INPUT.value.includes('@')) {
@@ -54,9 +54,22 @@ class Form {
 		}
 	}
 
+	renderSuccessForm(email) {
+		const html = `
+      <div class="form__inner" onclick="form.handlerClearForm();"></div>
+      <div class="form__box success">
+        <div class="form__close" onclick="form.handlerClearForm();"></div>
+        <div class="form__success-img"></div>
+        <p class="form__text-success">Мы выслали письмо на email: ${email}</p>
+      </div>
+    `
+
+		ROOT_FORM.innerHTML = html
+	}
+
 	render() {
 		const html = `
-    <div class="form__inner" onclick="form.handlerClearForm();"></div>
+      <div class="form__inner" onclick="form.handlerClearForm();"></div>
       <form class="form__box" onclick="form.handlerSubmit(event);">
         <div class="form__close" onclick="form.handlerClearForm();"></div>
         <h4 class="form__title">Начни прямо сейчас!</h4>
