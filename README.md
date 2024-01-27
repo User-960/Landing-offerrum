@@ -1,16 +1,16 @@
 # Landing-offerrum
 
-This is the gulp configuration to start creating the project.
+The main goal of the project is to write a simple advertising landing page with a form.
 
 ### Project Opportunities
 
-The starting configuration uses the jQuery library.
+The project uses a component approach through OOP classes.
 
 ## What is used:
 
 - Programming languages: HTML, CSS, JavaScript;
 - Preprocessor: SCSS;
-- Libraries: Gulp, jQuery.
+- Libraries: Gulp.
 
 ## To clone repository
 
