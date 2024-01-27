@@ -51,3 +51,59 @@
 		z-index: -1;
 	}
 }
+
+@media (max-width: 775px) {
+	.benefits {
+		&__list {
+			flex-direction: column;
+		}
+
+		&__item {
+			&:nth-child(2n) {
+				margin-left: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.benefits {
+		&__item {
+			margin-bottom: 55px;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.benefits {
+		&__list {
+			max-width: 660px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__item {
+			max-width: 260px;
+			max-height: 273px;
+			padding: 48px 23px;
+		}
+
+		&__item-img {
+			width: 120px;
+			margin-bottom: 6px;
+		}
+
+		&__item-text {
+			text-align: center;
+			font-size: 16px;
+			line-height: 25px;
+			letter-spacing: -0.7px;
+		}
+
+		&__item-box {
+			max-width: 226px;
+			max-height: 235px;
+		}
+	}
+}

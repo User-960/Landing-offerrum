@@ -90,7 +90,7 @@
 
 		color: $black;
 		text-align: center;
-		font-family: 'Inter';
+		font-family: 'GT Walsheim Pro', arial;
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 21.78px;
@@ -139,4 +139,51 @@
 
 .form__btn:active {
 	box-shadow: 0px 52px 8px -47px rgba(29, 37, 50, 0.2) inset;
+}
+
+@media (max-width: 775px) {
+	.form {
+		&__box {
+			max-width: 320px;
+			min-height: 337px;
+			padding: 45px 16px 41px;
+			background-image: url('../../images/mobile-form-bg.png');
+			border-radius: 20px;
+		}
+
+		&__close {
+			width: 34px;
+			height: 34px;
+			top: 14px;
+			right: 14px;
+		}
+
+		&__title {
+			font-size: 23px;
+			line-height: 29.99px;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			font-size: 18px;
+			line-height: 21.6px;
+			margin-bottom: 25px;
+		}
+
+		&__input {
+			font-size: 16px;
+			line-height: 19.36px;
+			color: #757575;
+			padding: 15px 16px 15px 20px;
+			margin-bottom: 17px;
+		}
+	}
+}
+
+@media (max-width: 314px) {
+	.form {
+		&__box {
+			max-width: 294px;
+		}
+	}
 }
