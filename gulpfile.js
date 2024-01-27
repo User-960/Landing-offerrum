@@ -25,7 +25,6 @@ function styles() {
 
 function scripts() {
 	return src([
-		'node_modules/jquery/dist/jquery.js',
 		'app/constants/root.js',
 		'app/mock/mock.js',
 		'app/components/header/Header.js',
