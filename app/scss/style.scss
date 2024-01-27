@@ -3,7 +3,6 @@
 @import './fonts';
 @import './reset';
 @import './global';
-@import './media';
 
 /* Components */
 @import '../components/header/Header';
@@ -13,8 +12,7 @@
 .top {
 	background-color: $bg-color;
 	padding: 100px 0px;
-	max-height: 1030px;
-	height: 100%;
+	min-height: 1030px;
 
 	&__inner {
 		display: flex;
@@ -43,7 +41,7 @@
 		min-height: 240px;
 		font-size: 72px;
 		line-height: 75.6px;
-		letter-spacing: -3%;
+		letter-spacing: -1px;
 		margin-bottom: 20px;
 		& span {
 			font-weight: 700;
@@ -94,6 +92,10 @@
 		position: absolute;
 		right: -90px;
 		z-index: 10;
+	}
+
+	&__mobile-img {
+		display: none;
 	}
 }
 
@@ -214,3 +216,5 @@
 		}
 	}
 }
+
+@import './media';
