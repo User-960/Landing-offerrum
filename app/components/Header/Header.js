@@ -7,11 +7,11 @@ class Header {
 		if (ROOT_BTN_MOBILE.classList.contains('opened')) {
 			ROOT_BTN_MOBILE.classList.remove('opened')
 			ROOT_BTN_MENU_MOBILE.classList.remove('opened')
-			ROOT_LOGO.style.opacity = '100%'
+			ROOT_LOGO.classList.remove('opened')
 		} else {
 			ROOT_BTN_MOBILE.classList.add('opened')
 			ROOT_BTN_MENU_MOBILE.classList.add('opened')
-			ROOT_LOGO.style.opacity = '0%'
+			ROOT_LOGO.classList.add('opened')
 		}
 	}
 

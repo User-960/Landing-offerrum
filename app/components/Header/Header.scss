@@ -14,6 +14,7 @@
 	&__logo {
 		position: relative;
 		z-index: 100;
+		opacity: 100%;
 	}
 
 	&__btn-mobile {
@@ -92,11 +93,11 @@
 		width: 304px;
 		padding: 115px 60px 60px 20px;
 		animation: opacity 1s;
+	}
 
-		&__logo {
-			position: absolute;
-			top: 21px;
-		}
+	& .menu__mobile-logo {
+		position: absolute;
+		top: 21px;
 	}
 }
 
@@ -115,6 +116,13 @@
 @media (max-width: 860px) {
 	.header {
 		top: 20px;
+
+		&__logo {
+			&.opened {
+				opacity: 0%;
+			}
+		}
+
 		& .menu {
 			display: none;
 		}
