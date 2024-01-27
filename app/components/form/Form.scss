@@ -168,6 +168,10 @@
 			padding: 45px 16px 41px;
 			background-image: url('../../images/mobile-form-bg.png');
 			border-radius: 20px;
+
+			&.success {
+				padding: 45px 16px 41px;
+			}
 		}
 
 		&__close {

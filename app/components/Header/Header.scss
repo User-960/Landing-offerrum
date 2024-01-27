@@ -12,6 +12,8 @@
 	}
 
 	&__logo {
+		width: 128px;
+		height: 55px;
 		position: relative;
 		z-index: 100;
 		opacity: 100%;
@@ -96,8 +98,10 @@
 	}
 
 	& .menu__mobile-logo {
+		width: 89px;
+		height: 36px;
 		position: absolute;
-		top: 21px;
+		top: 25px;
 	}
 }
 
@@ -118,6 +122,8 @@
 		top: 20px;
 
 		&__logo {
+			width: 89px;
+			height: 36px;
 			&.opened {
 				opacity: 0%;
 			}
