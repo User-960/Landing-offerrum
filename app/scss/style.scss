@@ -147,6 +147,9 @@
 		text-align: center;
 		position: relative;
 		z-index: 20;
+		& p {
+			font-weight: 600;
+		}
 		&::before {
 			content: '';
 			width: 84px;

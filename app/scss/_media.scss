@@ -289,11 +289,18 @@
 	}
 
 	.benefits {
+		padding-top: 70px;
+		padding-bottom: 0px;
+
+		& .container {
+			padding: 0px;
+		}
+
 		&__inner {
 			height: auto;
 			max-height: none;
 			min-height: 1093px;
-			padding: 40px 30px 102px 30px;
+			padding: 40px 30px 38px 30px;
 		}
 	}
 
@@ -330,8 +337,8 @@
 			&::after {
 				width: 300px;
 				height: 300px;
-				left: 6px;
-				bottom: 1460px;
+				left: 0px;
+				bottom: 1424px;
 			}
 		}
 	}
@@ -340,6 +347,7 @@
 @media (max-width: 650px) {
 	.top {
 		min-height: 735px;
+		padding-top: 60px;
 		padding-bottom: 50px;
 		&__title {
 			max-width: 270px;
@@ -361,7 +369,7 @@
 		}
 
 		&__btn {
-			padding: 15px 30px;
+			padding: 15px 26px;
 			font-size: 16px;
 			line-height: 20.8px;
 		}
@@ -392,8 +400,102 @@
 			&::after {
 				width: 250px;
 				height: 250px;
-				left: -28px;
-				bottom: 1400px;
+				left: 0px;
+				bottom: 1388px;
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.top {
+		&__mobile-img {
+			max-width: 366px;
+		}
+	}
+
+	.benefits {
+		&__circle {
+			&::after {
+				width: 215px;
+				height: 215px;
+				left: 0px;
+				bottom: 1308px;
+			}
+		}
+	}
+}
+
+@media (max-width: 466px) {
+	.benefits {
+		&__circle {
+			&::after {
+				width: 180px;
+				height: 180px;
+				left: -2px;
+				bottom: 1342px;
+			}
+		}
+	}
+
+	.benefits {
+		&__title {
+			width: 100%;
+			& p {
+				max-width: 180px;
+				margin: 0 auto;
+			}
+
+			&::before {
+				left: 42px;
+			}
+
+			&::after {
+				width: 88px;
+				height: 88px;
+				right: -34px;
+				bottom: 55px;
+				background-position-x: left;
+				background-size: 30vw 100%;
+				background-repeat: no-repeat;
+				transform: scale(0.9);
+			}
+		}
+	}
+}
+
+@media (max-width: 398px) {
+	.benefits {
+		&__title {
+			&::before {
+				left: -16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.benefits {
+		&__circle {
+			&::after {
+				width: 170px;
+				height: 170px;
+				left: -10px;
+				bottom: 1343px;
+			}
+		}
+	}
+
+	.benefits {
+		&__title {
+			&::before {
+				left: -8px;
+			}
+
+			&::after {
+				right: -34px;
+				bottom: 55px;
+				background-size: 45vw 100%;
 			}
 		}
 	}
