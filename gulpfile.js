@@ -31,6 +31,7 @@ function scripts() {
 		'app/components/header/Header.js',
 		'app/components/benefitsList/BenefitsList.js',
 		'app/components/form/Form.js',
+		'app/components/spinner/Spinner.js',
 		'app/js/main.js'
 
 		// 'app/js/*.js',

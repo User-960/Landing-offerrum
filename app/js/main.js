@@ -3,8 +3,13 @@ function render() {
 	benefitsList.render()
 }
 
+spinnerPage.render()
+
 ROOT_TOP_BTN.addEventListener('click', () => {
 	form.handlerOpenForm()
 })
 
-render()
+setTimeout(() => {
+	spinnerPage.handlerClear()
+	render()
+}, 2000)
