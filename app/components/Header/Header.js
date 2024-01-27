@@ -20,7 +20,7 @@ class Header {
       <div class="container">
         <div class="header__inner">
           <a href="#">
-            <img class="header__logo" src="../../images/logo.svg" alt="logo"/>
+            <img class="header__logo" src="../../images/header/logo.svg" alt="logo"/>
           </a>
 
           <menu class="menu">
@@ -37,7 +37,7 @@ class Header {
           </menu>
 
           <menu class="menu__mobile">
-            <img class="menu__mobile-logo" src="../../images/logo.svg" alt="logo"/>
+            <img class="menu__mobile-logo" src="../../images/header/logo.svg" alt="logo"/>
             <ul class="menu__list menu__mobile-list">
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#top">Главная</a>
