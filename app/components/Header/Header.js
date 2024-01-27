@@ -19,7 +19,9 @@ class Header {
 		const html = `
       <div class="container">
         <div class="header__inner">
-          <img class="header__logo" src="../../images/logo.svg" alt="logo"/>
+          <a href="#">
+            <img class="header__logo" src="../../images/logo.svg" alt="logo"/>
+          </a>
 
           <menu class="menu">
             <ul class="menu__list">
