@@ -22,7 +22,7 @@
 	&__btn-mobile {
 		display: none;
 		border: none;
-		background-image: url('../../images/header/burger-menu.svg');
+		background-image: url('../images/header/burger-menu.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -33,7 +33,7 @@
 		animation: opacity 0.5s;
 
 		&.opened {
-			background-image: url('../../images/close-btn.svg');
+			background-image: url('../images/close-btn.svg');
 			width: 45px;
 			height: 45px;
 		}

@@ -37,7 +37,7 @@ function scripts() {
 }
 
 function images() {
-	return src('app/images/**/*')
+	return src(['app/images/**/*'])
 		.pipe(
 			imagemin([
 				imagemin.gifsicle({ interlaced: true }),
@@ -74,17 +74,17 @@ function watching() {
 	watch(['app/scss/**/*.scss'], styles)
 	watch(['app/components/**/*.js'], scripts)
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
-	watch(['app/*.html']).on('change', browserSync.reload)
+	watch(['app/pages/*.html']).on('change', browserSync.reload)
 }
 
 function build() {
 	return src(
 		[
 			'app/css/style.min.css',
-			'app/images/*.*',
+			'app/images/**/*',
 			'app/fonts/*.*',
 			'app/js/main.min.js',
-			'app/**/*.html'
+			'app/pages/*.html'
 		],
 		{ base: 'app' }
 	).pipe(dest('dist'))
