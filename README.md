@@ -15,7 +15,7 @@ The project uses a component approach through OOP classes.
 ## To clone repository
 
 ```shell
-https://github.com/User-960/Landing-offerrum.git
+git clone https://github.com/User-960/Landing-offerrum.git
 ```
 
 ## Available Scripts
