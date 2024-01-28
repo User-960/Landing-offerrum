@@ -1,3 +1,90 @@
+@media (max-width: 1920px) {
+	.container {
+		max-width: 1312px;
+	}
+
+	.top {
+		min-height: 1030px;
+		&__inner {
+			margin-top: 103px;
+		}
+
+		&__title {
+			max-width: 750px;
+			font-size: 72px;
+			line-height: 75.6px;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			max-width: 510px;
+			font-size: 23px;
+			line-height: 27.6px;
+		}
+
+		&__btn {
+			padding: 20px 30px;
+			font-size: 20px;
+		}
+
+		&__img {
+			max-width: 863px;
+			max-height: 708px;
+			right: -90px;
+			top: 0px;
+		}
+	}
+
+	.benefits {
+		padding: 195px 0px 200px 0px;
+		&__inner {
+			max-width: 1284px;
+			max-height: 1093px;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__box {
+			&::after {
+				right: -152px;
+				bottom: 30px;
+				transform: scale(1);
+			}
+		}
+
+		&__title {
+			font-size: 45px;
+			line-height: 58.5px;
+
+			&::before {
+				top: -21px;
+				transform: scale(1);
+			}
+
+			&::after {
+				right: -35%;
+				bottom: 102px;
+				transform: scale(1);
+			}
+		}
+
+		&__circle {
+			position: relative;
+			&::before {
+				right: 72px;
+				bottom: -200px;
+				transform: scale(1);
+			}
+
+			&::after {
+				left: 80px;
+				bottom: 440px;
+				transform: scale(1);
+			}
+		}
+	}
+}
+
 @media (max-width: 1580px) {
 	.benefits {
 		&__circle {

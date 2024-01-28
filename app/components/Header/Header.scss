@@ -12,8 +12,8 @@
 	}
 
 	&__logo {
-		width: 128px;
-		height: 55px;
+		width: 168px;
+		height: 75px;
 		position: relative;
 		z-index: 100;
 		opacity: 100%;
@@ -52,23 +52,24 @@
 	}
 
 	& .menu__list-item + .menu__list-item {
-		margin-left: 105px;
+		margin-left: 155px;
 	}
 
 	& .menu__list-link {
 		user-select: none;
 		cursor: pointer;
 		color: $grey;
-		font-size: 23px;
-		line-height: 27.6px;
+		font-size: 30px;
+		line-height: 37.6px;
 	}
 
 	& .menu__btn {
 		color: $white;
-		padding: 16px 22px;
+		padding: 22px 32px;
 		background-color: transparent;
 		border: 1px solid $white;
 		border-radius: 15px;
+		font-size: 23px;
 		cursor: pointer;
 		transition: all 0.5s;
 
@@ -102,6 +103,29 @@
 		height: 36px;
 		position: absolute;
 		top: 25px;
+	}
+}
+
+@media (max-width: 1920px) {
+	.header {
+		&__logo {
+			width: 128px;
+			height: 55px;
+		}
+
+		& .menu__list-item + .menu__list-item {
+			margin-left: 105px;
+		}
+
+		& .menu__list-link {
+			font-size: 23px;
+			line-height: 27.6px;
+		}
+
+		& .menu__btn {
+			padding: 16px 22px;
+			font-size: 16px;
+		}
 	}
 }
 
