@@ -15,6 +15,9 @@
 	padding: 100px 0px;
 	min-height: 1250px;
 
+	position: relative;
+	z-index: 50;
+
 	&__inner {
 		display: flex;
 		position: relative;

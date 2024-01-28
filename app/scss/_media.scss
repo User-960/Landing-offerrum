@@ -261,8 +261,8 @@
 	.benefits {
 		&__title {
 			&::before {
-				width: 22px;
-				height: 22px;
+				width: 23px;
+				height: 23px;
 				left: -106px;
 				top: 72px;
 				background-size: contain;
@@ -521,6 +521,7 @@
 				height: 180px;
 				left: -2px;
 				bottom: 1342px;
+				display: none;
 			}
 		}
 	}
@@ -538,14 +539,13 @@
 			}
 
 			&::after {
-				width: 88px;
-				height: 88px;
-				right: -34px;
-				bottom: 55px;
-				background-position-x: left;
-				background-size: 30vw 100%;
-				background-repeat: no-repeat;
-				transform: scale(0.9);
+				width: 266px;
+				height: 362px;
+				right: -29.65px;
+				bottom: -80px;
+				background-size: cover;
+				background-position: right;
+				background-image: url('../images/benefitsList/benefits-half-circle-2-4.svg');
 			}
 		}
 	}
@@ -577,12 +577,6 @@
 		&__title {
 			&::before {
 				left: -8px;
-			}
-
-			&::after {
-				right: -34px;
-				bottom: 55px;
-				background-size: 45vw 100%;
 			}
 		}
 	}
