@@ -7,7 +7,7 @@ class Spinner {
 		const html = `
       <div class='container'>
         <div class="spinner__inner">
-          <img class="spinner__img" src="../../images/spinner/spinner.svg" alt="spinner..."/>
+          <img class="spinner__img" src="../../images/spinner/spinner.svg" alt="загрузка..."/>
         </div>
       </div>
     `

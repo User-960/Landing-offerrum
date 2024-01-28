@@ -27,14 +27,8 @@ function scripts() {
 	return src([
 		'app/constants/root.js',
 		'app/mock/mock.js',
-		'app/components/header/Header.js',
-		'app/components/benefitsList/BenefitsList.js',
-		'app/components/form/Form.js',
-		'app/components/spinner/Spinner.js',
+		'app/components/**/*.js',
 		'app/js/main.js'
-
-		// 'app/js/*.js',
-		// '!app/js/main.min.js'
 	])
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
@@ -78,6 +72,7 @@ function watching() {
 
 	watch(['app/components/**/*.scss'], styles)
 	watch(['app/scss/**/*.scss'], styles)
+	watch(['app/components/**/*.js'], scripts)
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
 	watch(['app/*.html']).on('change', browserSync.reload)
 }

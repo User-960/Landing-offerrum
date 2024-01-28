@@ -1,4 +1,4 @@
-function render() {
+const render = () => {
 	headerPage.render()
 	benefitsList.render()
 }

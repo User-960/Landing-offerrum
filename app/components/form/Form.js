@@ -84,7 +84,7 @@ class Form {
         <h4 class="form__title">Начни прямо сейчас!</h4>
         <p class="form__text">Получи все нужные навыки для заработка на NFT всего за 28 дней!</p>
         <input class="form__input" type="email" placeholder="Ваш email" required />
-        <p class="form__error" style="display:none;">Введите корректный адрес электронной почты</p>
+        <p class="form__error" style="display:none;">*Введите корректный адрес электронной почты</p>
         <button class="form__btn shadow">Оплатить</button>
       </form>
     `
